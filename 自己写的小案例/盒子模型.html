@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子模型</title>
+    <style>
+        .a {
+            width: 300px;
+            height: 200px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: red;
+        }
+
+        .b {
+            width: 300px;
+            height: 200px;
+            border-width: 5px;
+            border-style: dashed;
+            border-color: green;
+        }
+
+        .c {
+            width: 300px;
+            height: 200px;
+            /* border-width: 5px; */
+            /* border-style: dotted; */
+            /* border-color: blue; */
+            border: 5px dotted blue;
+        }
+
+        .d {
+            width: 300px;
+            height: 200px;
+            border-top: 5px solid red;
+            border-bottom: 5px dotted green;
+            border-left: 5px dashed yellow;
+            border-right: 5px groove blue;
+        }
+
+        .e {
+            width: 280px;
+            height: 270px;
+            background-color: yellowgreen;
+            padding-left: 20px;
+            padding-top: 30px;
+        }
+
+        .f {
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+            margin-bottom: 20px;
+        }
+
+        .g {
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+        }
+
+        .i {
+            width: 400px;
+            height: 200px;
+            background-color: pink;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .h1,
+        .h2 {
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+        }
+
+        .h1 {
+            margin-bottom: 100px;
+        }
+
+        .h2 {
+            margin-top: 200px;
+        }
+
+        .father {
+            width: 400px;
+            height: 400px;
+            background-color: purple;
+            margin-top: 50px;
+            /* border: 1px solid transparent;
+            padding: 1px; */
+            overflow: hidden;
+        }
+
+        .son {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>1.border-width:边框粗细</h3>
+    <h3>2.border-style:边框样式</h3>
+    <h3>3.border-color:边框颜色</h3>
+    <div class="a">实线</div>
+    <br>
+    <div class="b">虚线</div>
+    <br>
+    <div class="c">点线</div>
+    <br>
+    <div class="d">四条边不一样</div>
+    <br>
+    <h3>3.padding:内边距</h3>
+    <div class="e">2021年7月16日</div>
+    <br>
+    <h3>4.margin:外边距</h3>
+    <div class="f">一号盒子</div>
+    <div class="g">二号盒子</div>
+    <h3>5.块级元素水平居中</h3>
+    <div class="i">
+        <span>水平居中的盒子</span>
+        <br>
+        <img src="image/logo.png" alt="">
+    </div>
+    <br>
+    <h3>6.相邻块元素垂直外边距的合并</h3>
+    <div class="h1">上面的盒子</div>
+    <div class="h2">下面的盒子</div>
+    <h3>7.嵌套块元素塌陷</h3>
+    <div class="father">
+        <div class="son"></div>
+    </div>
+</body>
+
+</html>

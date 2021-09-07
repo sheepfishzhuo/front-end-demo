@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>隐藏元素</title>
+    <style>
+        .a {
+            /* display: none; */
+            /* display: block; */
+            /* visibility: hidden; */
+            visibility: visible;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+        .b {
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+        }
+        .c {
+            /* overflow: hidden; */
+            /* overflow: scroll; */
+            overflow: auto;
+            width: 200px;
+            height: 200px;
+            border: 3px solid pink;
+            margin: 100px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c">
+        我们在编写前台页面的时候一般可能不会用ecplise来写前台页面。可能用vscode写前台页面。
+
+vscode写的很爽，很开心。写完之后把前台代码放在了ecplise上拿tomcat跑。发现乱得不忍直视。像素大小变化的很大。
+
+后来发现是因为用vscode写的时候看到的比例是80%。放在tomcat上比例是100%。所以放在服务器上感觉像素变大了。
+
+无奈，只能一个个样式的调整，还好我的页面布局是流式页面，宽度用百分比来定义。改的时候还稍微好改些。
+    </div>
+</body>
+</html>

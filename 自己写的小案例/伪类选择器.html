@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>链接伪类选择器</title>
+    <style>
+        /* 1.把没有点击过的链接选出来 */
+        a:link {
+            color: #333;
+        }
+        /* 2.选择点击过的链接 */
+        a:visited {
+            color: orange;
+        }
+        /* 3.选择鼠标经过的链接 */
+        a:hover {
+            color: skyblue;
+        }
+        /* 4.选择鼠标按下但没放手的链接 */
+        a:active {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <a href="#">小猪佩奇</a>
+</body>
+</html>

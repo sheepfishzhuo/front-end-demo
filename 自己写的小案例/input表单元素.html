@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文本框和密码框</title>
+</head>
+<form action="po.php" method="GET">
+    <h3>1.文本框和密码框</h3>
+    <!-- 文本框 -->
+    账号：<input type="text" />
+    <br />
+    <!-- 密码框 -->
+    密码：<input type="password" />
+    <br />
+    <h3>2.单选框和复选框</h3>
+    性别：<input type="radio" />男<input type="radio" />女
+    <br /> 
+    爱好：<input type="checkbox" />吃饭<input type="checkbox" />睡觉<input type="checkbox" />打游戏
+    <h3>3.属性：name(定义元素名称)和value(设置默认值，主要针对文本框)</h3>
+    编号<input type="text" name="no" value="21001" />
+    <h3>4.属性：checked(设置默认值，主要针对单选框和复选框)和maxlength(输入字段中的字符的最大长度)/minlength</h3>
+    性别：<input type="radio" name="sex" />男<input type="radio" name="sex" checked="checked" />女
+    <br /> 
+    爱好：<input type="checkbox" name="hobby" checked="checked" />吃饭<input type="checkbox" name="hobby" />睡觉<input type="checkbox" name="hobby" checked="checked" />打游戏
+    <br />
+    小号：<input type="text" maxlength="6" />
+    <h3>5.提交按钮、重置按钮、普通按钮</h3>
+    <input type="submit" />
+    <input type="reset" />
+    <input type="button" value="普通按钮" />
+    <h3>6.文件域</h3>
+    <input type="file" />
+    <h3>7.label标签(标注标签)</h3>
+    <label for="bianhao">编号</label>
+    <input type="text" id="bianhao" />
+    <label for="xuanxiang">编号</label>
+    <input type="radio" id="xuanxiang" />1
+
+<body>
+
+</body>
+
+</html>

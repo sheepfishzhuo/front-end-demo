@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>定位</title>
+    <style>
+        .box1 {
+            position: relative;
+            top: 100px;
+            left: 100px;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+        }
+        .son1 {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 200px;
+            height: 200px;
+            background-color: greenyellow;
+        }
+        .father {
+            position: relative;
+            width: 500px;
+            height: 500px;
+            background-color: skyblue;
+        }
+        .dj {
+            position: fixed;
+            top: 100px;
+            right: 40px;
+        }
+        .w {
+            width: 800px;
+            height: 1400px;
+            background-color: pink;
+            margin: 100px auto;
+        }
+        .fixed {
+            position: fixed;
+            left: 50%;
+            bottom: 30px;
+            margin-left: 405px;
+            width: 50px;
+            height: 150px;
+            background-color: skyblue;
+        }
+        .nav {
+            position: sticky;
+            z-index: 100;
+            top: 0;
+            width: 800px;
+            height: 50px;
+            background-color:yellow;
+            margin: 100px auto;
+        }
+        .box {
+            position: absolute;
+           
+            left: 50%;
+            margin-left: -100px;
+            top: 50%;
+            margin-top: -100px;
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">我是导航栏</div>
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="father">
+        4<div class="son1">3</div>
+    </div>
+    <div class="dj">
+        <img src="image/pvp.png" alt="">
+    </div>
+    <div class="fixed"></div>
+    <div class="w">版心盒子</div>
+    <div class="box"></div>
+</body>
+</html>

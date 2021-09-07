@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>复合选择器</title>
+    <style>
+        /* 1.后代选择器 */
+        ol li {
+            color: pink;
+        }
+
+        ol li a {
+            color: red;
+        }
+
+        .nav li a {
+            color: green;
+        }
+
+        /* 2.子元素选择器 */
+        .nav>a {
+            color: red;
+        }
+
+        /* 3.并集选择器 */
+        span,
+        .pig li {
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <ol>
+        其他写法
+        <li>ol的li</li>
+        <li>ol的li</li>
+        <li>ol的li</li>
+        <li><a href="#">子代的子代</a></li>
+    </ol>
+    <ul>
+        <li>ul的li</li>
+        <li>ul的li</li>
+        <li>ul的li</li>
+    </ul>
+    <ul class="nav">
+        <li>ul的li</li>
+        <li>ul的li</li>
+        <li>ul的li</li>
+        <li><a href="#">子代的子代</a></li>
+        <li><a href="#">子代的子代</a></li>
+        <li><a href="#">子代的子代</a></li>
+    </ul>
+    <div class="nav">
+        <a href="#">子代</a>
+        <P><a href="#">子代的子代</a></P>
+    </div>
+    <span>熊大</span>
+    <span>熊二</span>
+    <ul class="pig">
+        <li>小猪佩奇</li>
+        <li>猪爸爸</li>
+        <li>猪妈妈</li>
+    </ul>
+</body>
+
+</html>

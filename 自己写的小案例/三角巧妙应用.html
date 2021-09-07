@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三角巧妙应用</title>
+    <style>
+        .box1 {
+            width: 0;
+            height: 0;
+            border-top: 100px solid transparent;
+            border-right: 50px solid skyblue;
+            border-bottom: 0 solid blue;
+            border-left: 0 solid green;
+        }
+        .miaosha i {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 0;
+            height: 0;
+            border-top: 24px solid transparent;
+            border-right: 10px solid #fff;
+            border-bottom: 0 solid blue;
+            border-left: 0 solid green;
+        }
+        .price {
+            width: 160px;
+            height: 24px;
+            line-height: 24px;
+            border: 1px solid red;
+            margin: 0 auto;
+        }
+        .miaosha {
+            position: relative;
+            float: left;
+            width: 90px;
+            height: 100%;
+            background-color: red;
+            text-align: center;
+            color: #fff;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .origin {
+            font-size: 12px;
+            color: gray;
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="price">
+        <span class="miaosha">
+            ￥1650
+            <i></i>
+        </span>
+        <span class="origin">￥5650</span>
+    </div>
+</body>
+</html>

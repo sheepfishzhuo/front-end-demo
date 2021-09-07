@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>基础选择器</title>
+    <style>
+        /* 标签选择器 */
+        p {
+            color: green;
+        }
+        div {
+            color: red;
+        }
+        /* 类选择器 */
+        .subject {
+            color: brown;
+        }
+        /* id选择器:只能调用一次 */
+        #name {
+            color: pink;
+        }
+        /* 通配符选择器 */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <p>男生</p>
+    <p>男生</p>
+    <div>女生</div>
+    <div>女生</div>
+    <ul>
+        <li>数学</li>
+        <li class="subject">语文</li>
+        <li class="subject">英语</li>
+    </ul>
+    <span id="name">pink</span>
+</body>
+</html>
